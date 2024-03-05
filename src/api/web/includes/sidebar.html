@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sidebar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/sidebar.css">
 </head>
 <body>
-    
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <span>Budget Tracker</span>
+            </div>
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-money'></i>
+                        <span class="text">Income</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-money-withdraw' ></i>
+                        <span class="text">Expenses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-grid'></i>
+                        <span class="text">Diversify</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="account">
+            <div class="logout-text">
+                <h4>Logout</h4>
+            </div>
+            <div class="logout">
+                <i class='bx bx-log-out'></i>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
