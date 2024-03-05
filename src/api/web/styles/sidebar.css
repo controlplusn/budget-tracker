@@ -2,12 +2,12 @@
     margin: 0;
     padding: 3px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     height: 100vh;
     background-color: #2F3438;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar {

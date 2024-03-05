@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>  
+    <div class="container" id="container">
+        <div class="form-container login">
+            <form>
+                <h1>Login</h1>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Password">
+                <button>Log in</button>
+        </div>
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create acccount</h1>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Password">
+                <!-- <input type="text" placeholder="Re-enter Password"> -->
+                <button>Sign-up</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details</p>
+                    <button class="hidden" id="login">Log in</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello!</h1>
+                    <p>Register to experience an enjoyable way of tracking your budget</p>
+                    <button class="hidden" id="register">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>
