@@ -101,7 +101,26 @@ body {
     left: 0;
     width: 50%;
     opacity: 0;
-    z-index: 1;
+    top: 100px;
+}
+
+.sign-up h1 {
+    margin: 10px 18px;
+}
+
+.sign-up input{
+    position: relative;
+    width: 80%;
+    margin: 10px 18px;
+    margin-top: 12px;
+    display: flex;
+}
+
+.sign-up button {
+    position: relative;
+    margin: 10px 18px;
+    margin-top: 18px;
+    display: flex;
 }
 
 .container.active .sign-up {
