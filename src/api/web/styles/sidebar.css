@@ -64,11 +64,17 @@ body {
     border-radius: 8px;
 }
 
-.sidebar    .account {
+.sidebar .account {
     justify-content: space-between;
     align-content: center;
     align-items: center;
     position: absolute;
+}
+
+.dashboard {
+    background-color: #017A53;
+    color: #fff;
+    transition: 0.5s ease-in-out;
 }
 
 .account .logout-text {

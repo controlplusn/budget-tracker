@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="top">
             <div class="logo">
                 <span>Budget Tracker</span>
@@ -24,28 +24,28 @@
         </div>
         <nav>
             <ul>
-                <li>
+                <li class="dashboard">
                     <a href="#">
                         <i class='bx bxs-dashboard'></i>
-                        <span class="text">Dashboard</span>
+                        <span class="text" id="dashboard">Dashboard</span>
                     </a>
                 </li>
-                <li>
+                <li class="income">
                     <a href="#">
                         <i class='bx bx-money'></i>
-                        <span class="text">Income</span>
+                        <span class="text" id="income">Income</span>
                     </a>
                 </li>
-                <li>
+                <li class="expenses">
                     <a href="#">
                         <i class='bx bx-money-withdraw' ></i>
-                        <span class="text">Expenses</span>
+                        <span class="text" id="expenses">Expenses</span>
                     </a>
                 </li>
-                <li>
+                <li class="diversify">
                     <a href="#">
                         <i class='bx bxs-grid'></i>
-                        <span class="text">Diversify</span>
+                        <span class="text" id="diversify">Diversify</span>
                     </a>
                 </li>
             </ul>
@@ -60,5 +60,6 @@
         </div>
     </div>
 
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>
