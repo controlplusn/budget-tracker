@@ -15,33 +15,61 @@ body {
     top: 0;
     bottom: 0;
     height: 100vh;
-    width: 250px;
+    width: 80px;
     background-color: #373C3F;
     padding: 4px 3px;
+    transition: all 0.5s ease;
 } 
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar #menu {
+    position: absolute;
+    color: #fff;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #menu{
+    left: 80%;
+}
+
+.sidebar.active {
+    opacity: 1; 
+}
 
 .sidebar .top .logo{
     color: #fff;
     display: flex;
     top: .4rem;
-    height: 60px;
+    height: 50px;
     width: 100%;
     align-items: center;
     pointer-events: none;
+    opacity: 0;
     margin-left: 10px;
     font-size: 18px;
 }
 
-.sidebar .top .menu i{
+.sidebar.active .top .logo {
+    opacity: 1;
+}
+
+.top .menu i{
     position: absolute;
     color: #fff;
     display: flex;
     top: .4rem;
-    height: 60px;
+    height: 62px;
     width: 100%;
     align-items: center;
     pointer-events: none;
-    left: 70%;
     font-size: 18px;
     cursor: pointer;
 }
@@ -51,31 +79,51 @@ body {
     list-style-type: none;
     height: 50px;
     width: 90%;
-    margin: 5px auto;
-    line-height: 40px;
-    border-radius: 10px;    
+    margin: 0.8rem auto;
+    line-height: 50px; 
 }
 
 .sidebar ul li a {
     color: #fff;
-    display: block;
+    display: flex;
     align-items: center;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 
-.sidebar .account {
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+.sidebar ul li a:hover {
+    background-color: #017A53;
+    color: #fff;
+}
+
+.sidebar ul li a i{
+    min-width: 40px;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 40px;
+}
+
+.sidebar .text {
+    opacity: 0;
+}
+
+.sidebar.active .text{
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar .account{
     position: absolute;
+    bottom: 0;
+    display: flex;
+    align-content: space-between;
 }
 
-.dashboard {
+/* .dashboard {
     background-color: #017A53;
     color: #fff;
     transition: 0.5s ease-in-out;
-}
+} */
 
 .account .logout-text {
     color: #fff;
