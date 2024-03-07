@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background: rgb(47,52,56);
+    color: #fff;
+    display: flex;
+}
+
+.scrollwrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;   
+    position: relative;
+    gap: 5rem;
+    margin: 50px 80%; /* change the value */
+}
+
+.box {
+    padding: 50px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+}
+
+.box.balance{
+    background-color: #373C3F;
+}
+
+.box.income {
+    background-color: #017A53;
+}
+
+.box.expenses {
+    background-color: #B22B27;
+}

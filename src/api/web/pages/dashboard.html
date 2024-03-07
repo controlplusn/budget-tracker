@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+    <title>Dashboard</title>
 
-    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/dashboard.css">
 </head>
 <body>
     <div class="container">
-        
+        <div class="scrollwrapper">
+            <div class="box balance">
+                <h1 class="boxheading">Balance</h1>
+                <div class="boxinfo">
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="box income">
+                <h1 class="boxheading">Income</h1>
+                <div class="boxinfo">
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="box expenses">
+                <h1 class="boxheading">Expenses</h1>
+                <div class="boxinfo">
+                    <span>0.00</span>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>
