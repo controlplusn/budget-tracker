@@ -1,5 +1,6 @@
 const container = document.getElementById('container');
 const sidebar = document.querySelector('.sidebar');
+const expense = document.querySelector('.expense-page');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 const menuBtn = document.getElementById('menu');
@@ -15,3 +16,7 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 })
+
+function on() {
+    document.getElementById("overlay-wrapper").style.display = "block";
+}
