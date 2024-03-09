@@ -10,22 +10,24 @@ body {
     height: 100vh;
     background: rgb(47,52,56);
     color: #fff;
-    display: flex;
 }
 
 .scrollwrapper {
     display: flex;
     justify-content: center;
-    margin-top: 20px;   
+    margin-top: 40px;   
     position: relative;
     gap: 5rem;
-    margin: 50px 80%; /* change the value */
 }
 
 .box {
     padding: 50px;
     padding-bottom: 100px;
-    border-radius: 10px;
+    border-radius: 40px;
+    background: #2f3438;
+    box-shadow:  10px 10px 20px #292e31,
+                 -10px -10px 20px #353a3f;
+    cursor: pointer;
 }
 
 .box.balance{
@@ -39,3 +41,24 @@ body {
 .box.expenses {
     background-color: #B22B27;
 }
+
+.container .bottom-box{
+    position: absolute;
+    display: flex;
+    margin-top: 50px;
+    left: 3%;
+    width: 65%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+/* .container .bottom-box .tasks {
+    position: absolute;
+    margin-top: 50px;
+    right: 3%;
+    width: 25%;
+    height: 60%;
+    background-color: #017A53;
+    border-radius: 30px;
+} */
