@@ -1,3 +1,4 @@
+import "../../styles/RegisterForm.css"
 
 const TextInput = ({ type, placeholder }) => {
     return (

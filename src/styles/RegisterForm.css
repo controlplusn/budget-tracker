@@ -1,0 +1,80 @@
+.regFormContainer {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    background-color: #5a7c5d;
+    /* background-color: #4F6F52; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.regForm h1 {
+    margin-bottom: 80px;
+    color: #fff;
+}
+
+.regForm p {
+    color: #c9cdd8;
+}
+
+.regForm input,
+.regForm button {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.regForm input {
+    background-color: #6e966f;
+}
+
+.regForm input::placeholder {
+    color: #D6EFD8;
+}
+
+.regForm button {
+    background-color: #16382a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 467px;
+}
+
+.hr-with-text hr {  
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.hr-with-text span {
+    padding: 0 10px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}

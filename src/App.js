@@ -4,9 +4,9 @@ import RegisterForm from './pages/RegisterPage/RegisterForm';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <RegisterForm />
-    </div>
+    </main>
   );
 }
 
