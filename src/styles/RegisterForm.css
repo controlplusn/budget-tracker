@@ -1,9 +1,16 @@
-.regFormContainer {
+/* Register flex container */
+.register-container {
+    height: 100%;
+    display: flex;
+}
+
+
+/* Register Form */
+.reg-left-container {
     width: 50%;
     height: 100%;
     margin: 0;
     background-color: #5a7c5d;
-    /* background-color: #4F6F52; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,4 +84,15 @@
     font-size: 14px;
     margin-bottom: 20px;
     margin-top: 15px;
+}
+
+
+/* Right container */
+.register-right-container {
+    width: 50%;
+    margin: 0;
+    background-color: #4F6F52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

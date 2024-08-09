@@ -1,10 +1,10 @@
 import TextInput from "../../components/ui/TextInput";
 import Button from "../../components/ui/Button";
-import "../../styles/RegisterForm.css"
+import "../../styles/RegisterForm.css";
 
-const RegisterForm = (handleToggleForm) => {
+const RegisterForm = () => {
     return (
-        <div className="regFormContainer">
+        <div className="reg-left-container">
             <form className="regForm">
                 <h1>Create Account</h1>
                 <TextInput type={'email'} placeholder={'Email'}/>
@@ -20,7 +20,7 @@ const RegisterForm = (handleToggleForm) => {
 
                 <p>
                     Already have an account?{" "}
-                    <a href="#" onClick={handleToggleForm}>Login</a>
+                    <a href="#">Login</a>
                 </p>
             </form>
         </div>
