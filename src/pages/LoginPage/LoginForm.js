@@ -2,7 +2,7 @@ import TextInput from "../../components/form/TextInput"
 import Button from "../../components/form/Button"
 import "../../styles/LoginForm.css";
 
-const LoginForm = ({ handleToggleForm }) => {
+const LoginForm = () => {
     return (
         <div className="login-left-container">
             <form className="loginForm">
@@ -19,7 +19,7 @@ const LoginForm = ({ handleToggleForm }) => {
 
                 <p>
                     Don't have an account?{" "}
-                    <a href="#" onClick={handleToggleForm}>Create account</a>
+                    <a href="#">Create account</a>
                 </p>
             </form>
         </div>
