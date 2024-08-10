@@ -1,5 +1,5 @@
-import TextInput from "../../components/ui/TextInput"
-import Button from "../../components/ui/Button"
+import TextInput from "../../components/form/TextInput"
+import Button from "../../components/form/Button"
 import "../../styles/LoginForm.css";
 
 const LoginForm = ({ handleToggleForm }) => {
