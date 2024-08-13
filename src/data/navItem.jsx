@@ -2,11 +2,14 @@ const navList = [
     {
         _id: 1,
         name: 'Dashboard',
-        icon: 'bx bxs-dashboard',   
     },
     {
         _id: 2,
         name: 'Accounts',
+        children: [
+            {_id: 2.1, name: 'Manage Accounts'},
+            {_id: 2.2, name: 'Accounts overview'},
+        ]
     },
     {
         _id: 3,
