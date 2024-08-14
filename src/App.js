@@ -1,6 +1,4 @@
 // Import icons
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
 import './App.css';
 import LoginForm from './pages/LoginPage/LoginForm';
 import RegisterForm from './pages/RegisterPage/RegisterForm';

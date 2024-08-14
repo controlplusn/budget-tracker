@@ -2,7 +2,6 @@
 import { BiSolidDashboard } from "react-icons/bi";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { BiCreditCard } from "react-icons/bi";
-import { FaAddressBook } from "react-icons/fa";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { FaMoneyBills } from "react-icons/fa6";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
@@ -31,7 +30,6 @@ const navList = [
         icon: <BiSolidUserDetail />,
         children: [
             {_id: 2.1, icon: <BiCreditCard />, name: 'Manage Accounts'},
-            {_id: 2.2, icon: <FaAddressBook />, name: 'Accounts Overview'},
         ],
     },
     {
