@@ -46,3 +46,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.nav-link .nav-icon {
+    display: flex;
+    margin-right: 10px;
+    font-size: 18px;
+}

@@ -9,7 +9,10 @@ const Dropdown = ({ children }) => {
         <ul className="dropdown-menu">
             {children.map(child => (
                 <li key={child._id} className="nav-item">
-                    <a href="#" className="nav-link">{child.name}</a>
+                    <a href="#" className="nav-link">
+                        {child.icon && <i className="nav-icon">{child.icon}</i>}
+                        <span>{child.name}</span>
+                    </a>
                 </li>
             ))}
         </ul>

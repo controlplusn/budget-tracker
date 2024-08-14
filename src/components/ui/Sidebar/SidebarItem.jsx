@@ -1,4 +1,5 @@
 // Reusable component for individual items in the sidebar
+// icon
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import "./Sidebar.css";
@@ -13,8 +14,8 @@ const SidebarItem = ({ nav }) => {
     return (
         <li className={`nav-item ${nav.children ? "has-dropdown" : ""}`}>
             <a className="nav-link collapsed" href="#" onClick={nav.children ? toggleDropdown : null}>
-              <i className={nav.icon}></i>
-              <span>{nav.name}</span>
+                {nav.icon && <i className="nav-icon">{nav.icon}</i>}
+                <span>{nav.name}</span>
             </a>
 
             {/* dropdown */}
