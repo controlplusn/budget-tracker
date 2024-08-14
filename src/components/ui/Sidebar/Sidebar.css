@@ -41,3 +41,8 @@
     padding: 10px 15px;
     border-radius: 4px;
 }
+
+.nav-item .dropdown-menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

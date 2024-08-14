@@ -1,5 +1,6 @@
 // Import icons
 import 'boxicons';
+import { BiSolidDashboard } from "react-icons/bi";
 
 import './App.css';
 import LoginForm from './pages/LoginPage/LoginForm';

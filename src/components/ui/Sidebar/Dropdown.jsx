@@ -1,17 +1,17 @@
 import "./Sidebar.css";
-import navList from "../../../data/navItem";
 
-const Dropdown = () => {
+const Dropdown = ({ children }) => {
+    if (!children || children.length === 0) {
+        return null;
+    }
+
     return (
-        <ul
-            id="icons-nav"
-            className="nav-content collapse"
-        >
-            <li>
-                <a href="#">
-                    <span></span>
-                </a>
-            </li>
+        <ul className="dropdown-menu">
+            {children.map(child => (
+                <li key={child._id} className="nav-item">
+                    <a href="#" className="nav-link">{child.name}</a>
+                </li>
+            ))}
         </ul>
     )
 }
