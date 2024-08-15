@@ -1,10 +1,14 @@
+import { useState } from "react";
 import ChooseAccount from "../../components/ChooseAccount";
 import "../../styles/Accounts.css"
 import Assets from "./Assets";
 import accList from "../../data/accItem";
-import AddAccountButton from "../../components/AddAccountButton";
+import AddAccountGroupButton from "../../components/AddAccountGroupButton";
+import CashAccount from "./CashAccount";
 
 const Accounts = () => {
+    const [activeAccount, setActiveAccount] = useState(null);
+
     return (
         <div className="accounts">
             <div className="accounts-header">
@@ -26,10 +30,16 @@ const Accounts = () => {
                         <ChooseAccount 
                             key={account._id}
                             accountName={account.accName}
+                            isActive={activeAccount === account.accName}
+                            onClick={() => setActiveAccount(account.accName)}
                         />
                     ))}
 
-                    <AddAccountButton />
+                    <AddAccountGroupButton />
+                </div>
+
+                <div className="account-details">
+                    {activeAccount === "Cash" && <CashAccount />}
                 </div>
             </div>
         </div>

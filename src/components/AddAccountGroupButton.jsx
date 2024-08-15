@@ -1,6 +1,6 @@
 import "../styles/Accounts.css"
 
-const AddAccountButton = () => {
+const AddAccountGroupButton = () => {
     return (
         <div className="addAccount-btn">
             <button>
@@ -10,4 +10,4 @@ const AddAccountButton = () => {
     )
 }
 
-export default AddAccountButton;
+export default AddAccountGroupButton;

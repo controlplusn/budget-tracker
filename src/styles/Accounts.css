@@ -30,7 +30,13 @@
 }
 
 .account-item .account-link {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
+    color: #c4c4c4;
+}
+
+.account-item.active .account-link {
+    font-size: 18px;
+    font-weight: 500;
     color: #212121;
 }
