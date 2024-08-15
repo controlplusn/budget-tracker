@@ -1,0 +1,36 @@
+.accounts {
+    margin: 10px 50px;
+    height: 100%;
+}
+
+.accounts-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accounts .asset-overview {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.choose-account {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.choose-account li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.account-item .account-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #212121;
+}
