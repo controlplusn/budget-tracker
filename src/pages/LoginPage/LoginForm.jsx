@@ -2,7 +2,7 @@ import TextInput from "../../components/form/TextInput"
 import Button from "../../components/form/Button"
 import "../../styles/LoginForm.css";
 
-const LoginForm = () => {
+const LoginForm = ({ navigateTo }) => {
     return (
         <div className="login-left-container">
             <form className="loginForm">
@@ -19,7 +19,9 @@ const LoginForm = () => {
 
                 <p>
                     Don't have an account?{" "}
-                    <a href="#">Create account</a>
+                    <a href="#" onClick={() => navigateTo('Register')}>
+                        Create account
+                    </a>
                 </p>
             </form>
         </div>

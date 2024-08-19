@@ -2,7 +2,7 @@ import TextInput from "../../components/form/TextInput";
 import Button from "../../components/form/Button";
 import "../../styles/RegisterForm.css";
 
-const RegisterForm = () => {
+const RegisterForm = ({ navigateTo }) => {
     return (
         <div className="reg-left-container">
             <form className="regForm">
@@ -20,7 +20,9 @@ const RegisterForm = () => {
 
                 <p>
                     Already have an account?{" "}
-                    <a href="#">Login</a>
+                    <a href="#" onClick={() => navigateTo('Login')}>
+                        Login
+                    </a>
                 </p>
             </form>
         </div>

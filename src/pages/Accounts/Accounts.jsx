@@ -42,6 +42,13 @@ const Accounts = () => {
                     {activeAccount === "Cash" && <CashAccount />}
                 </div>
             </div>
+
+            <div className="transactions">
+                <header>
+                    <p>Last Transactions</p>
+                    <p>Transaction Overview: </p>
+                </header>
+            </div>
         </div>
     )
 }

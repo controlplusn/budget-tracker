@@ -2,10 +2,10 @@ import "../../styles/LoginForm.css";
 import LoginForm from "./LoginForm";
 import LoginRight from "./LoginRight";
 
-const Login = () => {
+const Login = ({ navigateTo }) => {
     return (
         <div className="login-container">
-            <LoginForm />
+            <LoginForm navigateTo={navigateTo} />
             <LoginRight />
         </div>
     )

@@ -40,3 +40,12 @@
     font-weight: 500;
     color: #212121;
 }
+
+.transactions {
+    margin-top: 50px;
+}
+
+.transactions header{
+    display: flex;
+    justify-content: space-between;
+}
