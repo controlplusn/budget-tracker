@@ -1,5 +1,4 @@
 // Reusable component for individual items in the sidebar
-// icon
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import "./Sidebar.css";
